@@ -1,0 +1,38 @@
+.header {
+    height: 75vh;
+    background-image: linear-gradient(
+        to right bottom,
+        $color-primary,
+        $color-secondary
+      ),
+      url("../static/gym.jpg");
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 40rem, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 40rem, 0 100%);
+  
+    &__logo-box {
+      position: absolute;
+      top: 0px;
+      left: 1.5rem;
+    }
+  
+    &__logo {
+      height: 15rem;
+      animation-name: fadeIn;
+      animation-duration: 1s;
+      animation-timing-function: ease-in;
+      backface-visibility: hidden;
+    }
+  
+    &__text-box {
+      font-size: 3rem;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-45%, -40%);
+      width: 90rem;
+      text-align: center;
+    }
+  }

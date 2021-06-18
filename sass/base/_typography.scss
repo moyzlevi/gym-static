@@ -1,0 +1,68 @@
+body {
+  font-family: "Bebas Neue", cursive;
+  /*font-size: 30px;*/
+  color: $color-gray;
+  font-weight: 400;
+  line-height: 1.7;
+  padding: 3rem;
+}
+
+.heading-primary {
+  color: $color-white;
+  text-align: center;
+  backface-visibility: hidden;
+
+  &--main {
+    display: block;
+    letter-spacing: 2.5rem;
+    animation: moveInLeft 1s ease-out;
+    /*
+        animation-delay: 3s;
+        animation-iteration-count: 3;
+    
+        */
+  }
+
+  &--sub {
+    display: block;
+    font-weight: 100;
+    font-size: 3rem;
+    letter-spacing: 1.5rem;
+
+    animation: moveInRight 1s ease-out;
+  }
+}
+
+
+.heading-secondary{
+  font-size:  3.5rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  background-image: linear-gradient(to right, $color-primary, $color-secondary);
+  display: inline-block;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: all .2s;
+  letter-spacing: .2rem;
+
+  &:hover{
+    transform: skewY(2deg) skewX(15deg) scale(1.1);
+    text-shadow: .5rem 1rem 2rem rgba($color-black,.2);
+  }
+}
+
+.heading-tertiary {
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+}
+
+.paragraph {
+  font-family: 'Montserrat', sans-serif;
+  font-size: $default-font-size;
+  font-weight: 500;
+  &:not(:last-child){
+    margin-bottom: 3rem;
+  }
+}

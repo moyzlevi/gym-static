@@ -1,0 +1,14 @@
+{
+  "name": "gym-static",
+  "version": "1.0.0",
+  "description": "A static webpage for a gym",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass":"node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "moyzlevi",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^6.0.0"
+  }
+}
